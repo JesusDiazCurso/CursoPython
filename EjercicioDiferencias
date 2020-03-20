@@ -1,0 +1,44 @@
+from tkinter import *
+import time
+
+input ("pulsa <ENTER>")
+input ("Pulsa <ENTER> cuando estés listo ")
+print ("prepárate....")
+tini = time.time()
+x = 0
+y = 0
+def click_raton(evento):
+    x = evento.x
+    y = evento.y
+    print( "has hecho click en:")
+    
+    print("x: " + str(x))
+    print("y: " + str(y))
+    
+    if x >= 662 and x <= 700 and y >= 178 and y <= 226:
+        print("FELICIDADES HAS ADIVINADO LA PRIMERA")
+        
+    elif x >= 926 and x <= 939 and y >= 196 and y <=226:
+        print("FELICIDADES ADIVINASTE LA SEGUNDA")
+    elif x >= 1003 and x <= 1048 and y >= 174 and y <=209:
+        print("FELICIDADES ADIVINASTE LA TERCERA")
+    elif x >= 1217 and x <= 1249 and y >= 174 and y <=201:
+        print("FELICIDADES ADIVINASTE LA CUARTA")
+    elif x >= 1279 and x <= 1315 and y >= 199 and y <=237:
+        print("FELICIDADES ADIVINASTE LA QUINTA")
+        tfin = time.time()
+        tardado = tfin - tini
+        print ("Lo has resuelto en: " + str(tardado)+" segundos")        
+    else:
+        print("FALLASTE")
+    
+ventana = Tk() #asi creo un objeto de la clase Tk que representa una ventana 
+canvas = Canvas(ventana,width = 1350, height = 550)#esto es un componente que permite mostrar imagenes
+canvas.pack(expand = YES, fill = BOTH)
+imagen = PhotoImage(file = "imagen1.png")
+canvas.create_image(0,0, image = imagen, anchor = NW )#asi pintamos la imagenen el canvas
+
+ventana.geometry("1350x550")
+ventana.title("ADIVINA LAS DIFERENCIAS PINCHANDO EN LA IMAGEN DE LA DERECHA")
+ventana.bind("<Button 1>", click_raton)
+ventana.mainloop()
