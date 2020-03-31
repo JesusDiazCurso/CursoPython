@@ -1,3 +1,4 @@
+#ejercicio basico conversor de monedas
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from ventanas import ventana_principal
@@ -31,3 +32,4 @@ ui.boton_convertir_a_yenes.clicked.connect(convertir_de_euros_a_yenes)
 ui.boton_convertir_a_yuanes.clicked.connect(convertir_de_euros_a_yuanes)
 MainWindow.show()
 sys.exit(app.exec_())
+
