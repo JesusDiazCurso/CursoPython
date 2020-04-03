@@ -27,9 +27,12 @@ MainWindow = QtWidgets.QMainWindow()
 ui = ventana_principal.Ui_MainWindow()
 ui.setupUi(MainWindow)
 
+ui.boton_convertir_a_dolares.setIcon(QtGui.QIcon("dolar.png"))
+ui.boton_convertir_a_yenes.setIcon(QtGui.QIcon("japon.png"))
+ui.boton_convertir_a_yuanes.setIcon(QtGui.QIcon("china.png"))
+
 ui.boton_convertir_a_dolares.clicked.connect(convertir_de_euros_a_dolares)
 ui.boton_convertir_a_yenes.clicked.connect(convertir_de_euros_a_yenes)
 ui.boton_convertir_a_yuanes.clicked.connect(convertir_de_euros_a_yuanes)
 MainWindow.show()
 sys.exit(app.exec_())
-
