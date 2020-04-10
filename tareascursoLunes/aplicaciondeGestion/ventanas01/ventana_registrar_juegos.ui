@@ -81,6 +81,9 @@
       <pointsize>10</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
    </widget>
    <widget class="QLabel" name="label_5">
     <property name="geometry">
@@ -122,6 +125,9 @@
      <font>
       <pointsize>10</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string/>
@@ -191,6 +197,9 @@
       <pointsize>10</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -234,6 +243,9 @@
       <pointsize>10</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -241,9 +253,9 @@
    <widget class="QLabel" name="label_8">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>230</x>
       <y>170</y>
-      <width>111</width>
+      <width>51</width>
       <height>20</height>
      </rect>
     </property>
@@ -260,7 +272,7 @@
      <string notr="true">font: 10pt &quot;MV Boli&quot;;</string>
     </property>
     <property name="text">
-     <string>Año de Salida:</string>
+     <string>Año:</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="entrada_anio_juego">
@@ -276,6 +288,9 @@
      <font>
       <pointsize>10</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string/>
